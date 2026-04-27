@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaWeb — WorldSkills Landing</title>
+
+    <!-- ВАЖНО: относительный путь. Так CSS будет работать на GitHub Pages -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Декоративный фон -->
+    <div class="page-bg" aria-hidden="true">
+        <span class="page-bg__circle page-bg__circle--one"></span>
+        <span class="page-bg__circle page-bg__circle--two"></span>
+        <span class="page-bg__grid"></span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#home" aria-label="NexaWeb home">
+                <span class="logo__mark">N</span>
+                <span class="logo__text">NexaWeb</span>
+            </a>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link" href="#home">Home</a>
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#services">Services</a>
+                <a class="nav__link" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow">WorldSkills Frontend Project</p>
+                    <h1 class="hero__title">
+                        Landing page, который выглядит дорого и работает быстро
+                    </h1>
+                    <p class="hero__subtitle">
+                        Современная адаптивная верстка на чистом HTML и CSS: без Bootstrap,
+                        Tailwind и JavaScript. Чистая структура, плавные анимации, удобный интерфейс
+                        и правильные пути для загрузки на GitHub Pages.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#contact">Начать проект</a>
+                        <a class="btn btn--ghost" href="#services">Смотреть услуги</a>
+                    </div>
+
+                    <div class="hero__stats" aria-label="Преимущества проекта">
+                        <div class="hero__stat">
+                            <strong>100%</strong>
+                            <span>HTML + CSS</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong>3+</strong>
+                            <span>breakpoints</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong>0</strong>
+                            <span>frameworks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card" aria-label="Превью сайта">
+                    <div class="hero-card__top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="hero-card__screen">
+                        <div class="hero-card__line hero-card__line--big"></div>
+                        <div class="hero-card__line"></div>
+                        <div class="hero-card__line hero-card__line--short"></div>
+
+                        <div class="hero-card__widgets">
+                            <div class="mini-card mini-card--active">
+                                <span class="mini-card__icon">⚡</span>
+                                <p>Fast UI</p>
+                            </div>
+                            <div class="mini-card">
+                                <span class="mini-card__icon">📱</span>
+                                <p>Responsive</p>
+                            </div>
+                            <div class="mini-card">
+                                <span class="mini-card__icon">🎨</span>
+                                <p>Clean CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about" id="about">
+            <div class="container about__grid">
+                <div class="about__visual">
+                    <div class="about__image">
+                        <div class="about__badge">
+                            <strong>UI/UX</strong>
+                            <span>чистый дизайн</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <p class="eyebrow">About us</p>
+                    <h2 class="section-title">Мы создаём интерфейсы, которые удобно смотреть с любого устройства</h2>
+                    <p class="about__text">
+                        NexaWeb Studio разрабатывает современные landing page для проектов, услуг и личных брендов.
+                        В работе мы уделяем внимание не только красивому внешнему виду, но и техническому качеству:
+                        правильной HTML5-семантике, понятной структуре блоков, CSS-анимациям, адаптивности,
+                        визуальной иерархии, аккуратной типографике и удобной навигации. Такой подход помогает
+                        пользователю быстро понять ценность предложения, легко найти важную информацию и оставить
+                        заявку без лишних действий.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="feature">
+                            <span>✓</span>
+                            <p>Семантический HTML5</p>
+                        </div>
+                        <div class="feature">
+                            <span>✓</span>
+                            <p>Flexbox и CSS Grid</p>
+                        </div>
+                        <div class="feature">
+                            <span>✓</span>
+                            <p>Mobile-first адаптивность</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Services</p>
+                    <h2 class="section-title">Услуги для высокого балла</h2>
+                    <p class="section-subtitle">
+                        Каждый блок сделан так, чтобы показать навыки верстки, дизайна, адаптивности и организации кода.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">💎</div>
+                        <h3 class="service-card__title">Premium UI Design</h3>
+                        <p class="service-card__text">
+                            Единая палитра, аккуратные отступы, современная визуальная иерархия и приятные hover-эффекты.
+                        </p>
+                        <a class="service-card__link" href="#contact">Подробнее →</a>
+                    </article>
+
+                    <article class="service-card service-card--featured">
+                        <div class="service-card__icon">🚀</div>
+                        <h3 class="service-card__title">Adaptive Layout</h3>
+                        <p class="service-card__text">
+                            Корректное отображение на 1920px, планшетах и мобильном экране 375px без масштабирования.
+                        </p>
+                        <a class="service-card__link" href="#contact">Подробнее →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon">🧩</div>
+                        <h3 class="service-card__title">Clean Code</h3>
+                        <p class="service-card__text">
+                            Понятные классы по BEM, комментарии, логичная структура файлов и правильные относительные пути.
+                        </p>
+                        <a class="service-card__link" href="#contact">Подробнее →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact" id="contact">
+            <div class="container contact__grid">
+                <div class="contact__content">
+                    <p class="eyebrow">Contact</p>
+                    <h2 class="section-title">Оставьте заявку</h2>
+                    <p class="contact__text">
+                        Форма не отправляет данные на сервер, потому что backend по заданию не требуется.
+                        Но визуально она полностью готова для реального проекта.
+                    </p>
+
+                    <div class="contact-box">
+                        <div class="contact-box__item">
+                            <span>✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:hello@nexaweb.kz">hello@nexaweb.kz</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-box__item">
+                            <span>📞</span>
+                            <div>
+                                <strong>Телефон</strong>
+                                <a href="tel:+77001234567">+7 700 123 45 67</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form" action="#" method="post">
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" id="name" name="name" type="text" placeholder="Введите имя" required>
+
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" id="email" name="email" type="email" placeholder="example@mail.com" required>
+
+                    <label class="form__label" for="message">Сообщение</label>
+                    <textarea class="form__input form__textarea" id="message" name="message" placeholder="Напишите сообщение" required></textarea>
+
+                    <button class="btn btn--primary form__btn" type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">© 2026 NexaWeb Studio. Все права защищены.</p>
+
+            <div class="footer__links">
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
